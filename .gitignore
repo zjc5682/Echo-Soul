@@ -1,0 +1,41 @@
+# Python 虚拟环境
+venv/
+tts_venv/
+env/
+ENV/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDE 配置文件 (如果你用 VS Code 或 PyCharm)
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 本地数据库
+*.db
+*.sqlite3
+
+# 生成的音频缓存 (不要上传生成的音频，节省空间)
+server/data/audio_cache/*.wav
+server/data/audio_cache/*.mp3
+
+# MOSS 项目内部的大文件和缓存
+# 我们只保留代码结构，不保留模型权重和缓存
+server/lib/MOSS-TTS-Nano/.cache/
+server/lib/MOSS-TTS-Nano/generated_audio/
+server/lib/MOSS-TTS-Nano/.app_prompt_uploads/
+server/lib/MOSS-TTS-Nano/__pycache__/
+server/lib/MOSS-TTS-Nano/moss_tts_nano/__pycache__/
+server/lib/MOSS-TTS-Nano/*.egg-info/
+
+# 环境变量文件 (如果有密钥)
+.env
+
+# 系统垃圾文件
+.DS_Store
+Thumbs.db
